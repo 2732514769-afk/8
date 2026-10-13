@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------
+# 敏感文件防护
+# 密钥、证书、凭证一旦提交就会永久留在 Git 历史里，所以在源头忽略。
+# ---------------------------------------------------------------
+
+# --- 私钥与证书 ---
+*.pem
+*.key
+*.der
+*.p8
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*.kdbx
+*.ovpn
+*.jwk
+*.mobileprovision
+*.publishsettings
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# --- 凭证 / 配置文件 ---
+.env
+.env.*
+*.env
+.netrc
+_netrc
+.htpasswd
+.npmrc
+.pypirc
+credentials.json
+credential.json
+secrets.json
+secret.json
+secrets.yml
+secrets.yaml
+service-account*.json
+*-service-account.json
+
+# --- 云平台与工具目录 ---
+.aws/
+.azure/
+.gcloud/
+.ssh/
+.terraform/
+*.tfstate
+*.tfstate.*
